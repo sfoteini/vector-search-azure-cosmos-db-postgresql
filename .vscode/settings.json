@@ -1,0 +1,4 @@
+{
+    "notebook.cellFocusIndicator": "gutter",
+    "python.terminal.activateEnvironment": true
+}
