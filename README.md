@@ -14,6 +14,10 @@ Before you start, ensure that you have the following prerequisites installed and
 
     > The multi-modal embeddings APIs are available in the following regions: East US, France Central, Korea Central, North Europe, Southeast Asia, West Europe, West US.
 
+* An Azure Storage account - [Create an Azure Storage account using the Azure CLI](https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-cli?WT.mc_id=AI-MVP-5004971).
+
+* An Azure Cosmos DB for PostgreSQL cluster - [Create an Azure Cosmos DB for PostgreSQL cluster in the Azure portal](https://learn.microsoft.com/azure/cosmos-db/postgresql/quickstart-create-portal?tabs=direct&WT.mc_id=AI-MVP-5004971). You should also [activate the pgvector extension](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-use-pgvector?WT.mc_id=AI-MVP-5004971#enable-extension).
+
 * Python 3.10, Visual Studio Code, Jupyter Notebook, and Jupyter Extension for Visual Studio Code.
 
 ## Set-up your working environment
@@ -36,41 +40,12 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 
 ## How to use the samples
 
-### Data Preprocessing
-
-For our application, we'll be working with a subset of the original dataset. Alongside the image files, we aim to retain associated metadata like the title, author's name, and description for each painting.
-
-In the *[data_preprocessing.ipynb](data_processing/data_preprocessing.ipynb)* Jupyter Notebook, you will take the following steps:
-
-1. Clean up the text descriptions by removing special characters to minimize errors related to character encoding.
-
-2. Clean up the names of the artists, addressing encoding issues for some artists' names.
-
-3. Exclude artists with fewer than 15 paintings from the dataset, along with other data we won't be using.
-
-After these steps, the final dataset will comprise 11,206 images of paintings.
-
-### Vector Embeddings Generation
-
-Run the *[generate_embeddings.py](data_processing/generate_embeddings.py)* script to compute the embeddings of all the images using the following command from the root folder:
-
-```bash
-python data_processing/generate_embeddings.py
-```
-
-The final dataset is saved in the *dataset_embeddings.csv* file. To generate embeddings for the images, our process can be summarized as follows:
-
-1. Retrieve the filenames of the images in the dataset.
-
-2. Divide the data into batches, and for each batch, perform the following steps:
-
-    1. Compute the vector embedding for each image in the batch using the Vectorize Image API of Azure AI Vision.
-
-    2. Save the vector embeddings of the images along with the filenames into a file.
-
-3. Update the dataset by inserting the vector embedding of each image.
-
-<br>
+| Sample | Description |
+| ------ | ----------- |
+| [Data Preprocessing](data_processing/data_preprocessing.ipynb) | Cleans up the SemArt Dataset and creates the final dataset that is utilized in our application. |
+| [Embeddings Generation](data_processing/generate_embeddings.py) | Generates vector embeddings for the images in the dataset using the Azure AI Vision Vectorize Image API and creates the final dataset that is utilized in the image search application. |
+| [Upload images to Azure Blob Storage](data_upload/upload_images_to_blob.py) | Creates an Azure Blob Storage container and uploads the paintings' images. |
+| [Insert data to Azure Cosmos DB for PostgreSQL](data_upload/upload_data_to_postgresql.py) | Creates a table in the Azure Cosmos DB for PostgreSQL cluster and populates it with data from the dataset. |
 
 **More samples will be added soon!**
 
