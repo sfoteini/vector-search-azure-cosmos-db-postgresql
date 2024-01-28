@@ -55,5 +55,6 @@ This repository hosts the source code for the "Image similarity search with pgve
 
 * [Part 1: Use the Azure AI Vision multi-modal embeddings API for image retrieval](https://sfoteini.github.io/blog/use-the-azure-ai-vision-multi-modal-embeddings-api-for-image-retrieval/)
 * [Part 2: Generate embeddings with Azure AI Vision multi-modal embeddings API](https://sfoteini.github.io/blog/generate-embeddings-with-azure-ai-vision-multi-modal-embeddings-api/)
+* [Part 3: Store embeddings in Azure Cosmos DB for PostgreSQL with pgvector](https://sfoteini.github.io/blog/store-embeddings-in-azure-cosmos-db-for-postgresql-with-pgvector/)
 
 *Feel free to experiment with the project and modify the code to meet your specific use cases and requirements!*
