@@ -1,0 +1,19 @@
+# Azure Cosmos DB for PostgreSQL table
+IMAGE_FILE_COLUMN_NAME: str = "image_file"
+DESCRIPTION_COLUMN_NAME: str = "description"
+AUTHOR_COLUMN_NAME: str = "author"
+TITLE_COLUMN_NAME: str = "title"
+TECHNIQUE_COLUMN_NAME: str = "technique"
+TYPE_COLUMN_NAME: str = "type"
+TIMEFRAME_COLUMN_NAME: str = "timeframe"
+VECTOR_COLUMN_NAME: str = "vector"
+COLUMN_NAMES_LIST: list[str] = [
+    IMAGE_FILE_COLUMN_NAME,
+    DESCRIPTION_COLUMN_NAME,
+    AUTHOR_COLUMN_NAME,
+    TITLE_COLUMN_NAME,
+    TECHNIQUE_COLUMN_NAME,
+    TYPE_COLUMN_NAME,
+    TIMEFRAME_COLUMN_NAME,
+    VECTOR_COLUMN_NAME,
+]
