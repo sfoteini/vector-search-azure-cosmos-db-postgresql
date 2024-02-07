@@ -50,12 +50,22 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 
 **More samples will be added soon!**
 
-## Blog Posts
+## Resources
 
-This repository hosts the source code for the "Image similarity search with pgvector" learning series.
+### Blog Posts
 
-* [Part 1: Use the Azure AI Vision multi-modal embeddings API for image retrieval](https://sfoteini.github.io/blog/use-the-azure-ai-vision-multi-modal-embeddings-api-for-image-retrieval/)
-* [Part 2: Generate embeddings with Azure AI Vision multi-modal embeddings API](https://sfoteini.github.io/blog/generate-embeddings-with-azure-ai-vision-multi-modal-embeddings-api/)
-* [Part 3: Store embeddings in Azure Cosmos DB for PostgreSQL with pgvector](https://sfoteini.github.io/blog/store-embeddings-in-azure-cosmos-db-for-postgresql-with-pgvector/)
+| Title | Summary |
+| ----- | ------- |
+| [Use the Azure AI Vision multi-modal embeddings API for image retrieval](https://sfoteini.github.io/blog/use-the-azure-ai-vision-multi-modal-embeddings-api-for-image-retrieval/) | Explore the basics of vector search and generate vector embeddings for images and text using the Azure AI Vision multi-modal embeddings APIs. |
+| [Generate embeddings with Azure AI Vision multi-modal embeddings API](https://sfoteini.github.io/blog/generate-embeddings-with-azure-ai-vision-multi-modal-embeddings-api/) | Discover the art of generating vector embeddings for paintings’ images using the Azure AI Vision multi-modal embeddings APIs in Python. |
+| [Store embeddings in Azure Cosmos DB for PostgreSQL with pgvector](https://sfoteini.github.io/blog/store-embeddings-in-azure-cosmos-db-for-postgresql-with-pgvector/) | Learn how to configure Azure Cosmos DB for PostgreSQL as a vector database and insert embeddings into a table using the pgvector extension. |
+| [Use pgvector for searching images on Azure Cosmos DB for PostgreSQL](https://sfoteini.github.io/blog/use-pgvector-for-searching-images-on-azure-cosmos-db-for-postgresql/) | Learn how to write SQL queries to search for and identify images that are semantically similar to a reference image or text prompt using pgvector. |
+
+### References
+
+* [Azure AI Vision multi-modal embeddings - Microsoft Docs](https://learn.microsoft.com/azure/ai-services/computer-vision/concept-image-retrieval?WT.mc_id=AI-MVP-5004971)
+* [Call the multi-modal embeddings APIs – Microsoft Docs](https://learn.microsoft.com/azure/ai-services/computer-vision/how-to/image-retrieval?WT.mc_id=AI-MVP-5004971&tabs=python)
+* [How to use pgvector on Azure Cosmos DB for PostgreSQL – Microsoft Docs](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-use-pgvector?WT.mc_id=AI-MVP-5004971)
+* [Official GitHub repository of the pgvector extension](https://github.com/pgvector/pgvector)
 
 *Feel free to experiment with the project and modify the code to meet your specific use cases and requirements!*
