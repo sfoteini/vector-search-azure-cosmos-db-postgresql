@@ -14,4 +14,10 @@ The image similarity search workflow is summarized as follows:
 
 In the *[image_search.ipynb](image_search.ipynb)* Jupyter Notebook, you will build a basic image similarity search application using the Azure AI Vision multi-modal embeddings APIs and Azure Cosmos DB for PostgreSQL. You will explore both text-to-image and image-to-image search approaches, along with a simple method for metadata filtering.
 
-**More samples will be added soon!**
+## Approximate Nearest Neighbor Search with IVFFlat Index
+
+In the *[image_search_ivfflat_index.ipynb](image_search_ivfflat_index.ipynb)* Jupyter Notebook, we'll explore how to find similar images using the IVFFlat index of the pgvector extension on Azure Cosmos DB for PostgreSQL and see how well the index performs compared to exact search.
+
+## Approximate Nearest Neighbor Search with HNSW Index
+
+In the *[image_search_hnsw_index.ipynb](image_search_hnsw_index.ipynb)* Jupyter Notebook, we'll explore how to find similar images using the HNSW index of the pgvector extension on Azure Cosmos DB for PostgreSQL and see how well the index performs compared to exact search.

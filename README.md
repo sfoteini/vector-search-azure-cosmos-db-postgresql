@@ -40,13 +40,29 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 
 ## How to use the samples
 
+### Data processing
+
 | Sample | Description |
 | ------ | ----------- |
 | [Data Preprocessing](data_processing/data_preprocessing.ipynb) | Cleans up the SemArt Dataset and creates the final dataset that is utilized in our application. |
 | [Embeddings Generation](data_processing/generate_embeddings.py) | Generates vector embeddings for the images in the dataset using the Azure AI Vision Vectorize Image API and creates the final dataset that is utilized in the image search application. |
+
+### Data upload and index creation
+
+| Sample | Description |
+| ------ | ----------- |
 | [Upload images to Azure Blob Storage](data_upload/upload_images_to_blob.py) | Creates an Azure Blob Storage container and uploads the paintings' images. |
 | [Insert data to Azure Cosmos DB for PostgreSQL](data_upload/upload_data_to_postgresql.py) | Creates a table in the Azure Cosmos DB for PostgreSQL cluster and populates it with data from the dataset. |
+| [Insert data to Azure Cosmos DB for PostgreSQL and create IVFFlat index](data_upload/upload_data_to_postgresql_ivfflat.py) | Creates a table in the Azure Cosmos DB for PostgreSQL cluster, populates it with data from the dataset, and creates an IVFFlat index. |
+| [Insert data to Azure Cosmos DB for PostgreSQL and create HNSW index](data_upload/upload_data_to_postgresql_hnsw.py) | Creates a table in the Azure Cosmos DB for PostgreSQL cluster, populates it with data from the dataset, and creates an HNSW index. |
+
+### Vector search
+
+| Sample | Description |
+| ------ | ----------- |
 | [Exact nearest neighbor search with pgvector](vector_search_samples/image_search.ipynb) | Demonstrates text-to-image and image-to-image search approaches, along with a simple method for metadata filtering. |
+| [Approximate Nearest Neighbor Search with IVFFlat Index](vector_search_samples/image_search_ivfflat_index.ipynb) | Demonstrates text-to-image and image-to-image search approaches utilizing the IVFFlat index and compares the results with those retrieved through exact search. |
+| [Approximate Nearest Neighbor Search with HNSW Index](vector_search_samples/image_search_hnsw_index.ipynb) | Demonstrates text-to-image and image-to-image search approaches utilizing the HNSW index and compares the results with those retrieved through exact search. |
 
 **More samples will be added soon!**
 
@@ -67,5 +83,6 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 * [Call the multi-modal embeddings APIs – Microsoft Docs](https://learn.microsoft.com/azure/ai-services/computer-vision/how-to/image-retrieval?WT.mc_id=AI-MVP-5004971&tabs=python)
 * [How to use pgvector on Azure Cosmos DB for PostgreSQL – Microsoft Docs](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-use-pgvector?WT.mc_id=AI-MVP-5004971)
 * [Official GitHub repository of the pgvector extension](https://github.com/pgvector/pgvector)
+* [Vector Similarity Search and Faiss Course](https://www.youtube.com/playlist?list=PLIUOU7oqGTLhlWpTz4NnuT3FekouIVlqc) by James Briggs
 
 *Feel free to experiment with the project and modify the code to meet your specific use cases and requirements!*

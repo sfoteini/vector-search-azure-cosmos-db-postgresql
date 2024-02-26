@@ -5,6 +5,9 @@ from PIL import Image
 import matplotlib.pyplot as plt
 from azure.storage.blob import ContainerClient
 
+COLUMN_WIDTH = 2.5
+ROW_HEIGHT = 3.5
+
 
 def vectorize_image_with_filepath(
     image_filepath: str,
@@ -160,7 +163,8 @@ def display_image_grid(
     ]
 
     # Display the images
-    f, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(10, 10))
+    figure_size = (ncols * COLUMN_WIDTH, nrows * ROW_HEIGHT)
+    f, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figure_size)
     for i, ax in enumerate(axes.flat):
         if i < num_images:
             ax.imshow(Image.open(images_stream[i]))
