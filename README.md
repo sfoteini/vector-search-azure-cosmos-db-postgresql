@@ -64,8 +64,6 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 | [Approximate Nearest Neighbor Search with IVFFlat Index](vector_search_samples/image_search_ivfflat_index.ipynb) | Demonstrates text-to-image and image-to-image search approaches utilizing the IVFFlat index and compares the results with those retrieved through exact search. |
 | [Approximate Nearest Neighbor Search with HNSW Index](vector_search_samples/image_search_hnsw_index.ipynb) | Demonstrates text-to-image and image-to-image search approaches utilizing the HNSW index and compares the results with those retrieved through exact search. |
 
-**More samples will be added soon!**
-
 ## Resources
 
 ### Blog Posts
@@ -76,6 +74,8 @@ Before running the Python scripts and Jupyter Notebooks, you should:
 | [Generate embeddings with Azure AI Vision multi-modal embeddings API](https://sfoteini.github.io/blog/generate-embeddings-with-azure-ai-vision-multi-modal-embeddings-api/) | Discover the art of generating vector embeddings for paintings’ images using the Azure AI Vision multi-modal embeddings APIs in Python. |
 | [Store embeddings in Azure Cosmos DB for PostgreSQL with pgvector](https://sfoteini.github.io/blog/store-embeddings-in-azure-cosmos-db-for-postgresql-with-pgvector/) | Learn how to configure Azure Cosmos DB for PostgreSQL as a vector database and insert embeddings into a table using the pgvector extension. |
 | [Use pgvector for searching images on Azure Cosmos DB for PostgreSQL](https://sfoteini.github.io/blog/use-pgvector-for-searching-images-on-azure-cosmos-db-for-postgresql/) | Learn how to write SQL queries to search for and identify images that are semantically similar to a reference image or text prompt using pgvector. |
+| [Use IVFFlat index on Azure Cosmos DB for PostgreSQL for similarity search](https://sfoteini.github.io/blog/use-ivfflat-index-on-azure-cosmos-db-for-postgresql-for-similarity-search/) | Explore vector similarity search using the Inverted File with Flat Compression (IVFFlat) index of pgvector on Azure Cosmos DB for PostgreSQL. |
+| [Use HNSW index on Azure Cosmos DB for PostgreSQL for similarity search](https://sfoteini.github.io/blog/use-hnsw-index-on-azure-cosmos-db-for-postgresql-for-similarity-search/) | Explore vector similarity search using the Hierarchical Navigable Small World (HNSW) index of pgvector on Azure Cosmos DB for PostgreSQL. |
 
 ### References
 
