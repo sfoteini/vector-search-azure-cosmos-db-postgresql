@@ -1,5 +1,6 @@
 __pycache__/
 .venv
 .env
+poetry.lock
 dataset
 semart_dataset

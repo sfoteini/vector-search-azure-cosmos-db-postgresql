@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "vector-search-azure-cosmos-db-postgresql"
+version = "0.1.0"
+description = "This sample shows how to build vector similarity search on Azure Cosmos DB for PostgreSQL using the pgvector extension and the multi-modal embeddings APIs of Azure AI Vision."
+authors = ["Foteini Savvidou"]
+license = "MIT license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.2"
+requests = "^2.32.3"
+tqdm = "^4.66.4"
+unidecode = "^1.3.8"
+psycopg2 = "^2.9.9"
+azure-storage-blob = "^12.20.0"
+azure-core = "^1.30.2"
+pillow = "^10.4.0"
+matplotlib = "^3.9.1"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
